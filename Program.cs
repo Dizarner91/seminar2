@@ -81,15 +81,12 @@ class Program
 
         int number;
 
-        // Пытаемся преобразовать ввод пользователя в целое число
         if (int.TryParse(input, out number))
         {
-            // Проверяем, что число входит в указанный диапазон
             if (number >= 10 && number <= 99)
             {
-                // Находим наибольшую цифру
-                int firstDigit = number / 10; // первая цифра числа
-                int secondDigit = number % 10; // вторая цифра числа
+                int firstDigit = number / 10; 
+                int secondDigit = number % 10;
 
                 int maxDigit = Math.Max(firstDigit, secondDigit);
 
